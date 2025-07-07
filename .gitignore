@@ -1,0 +1,51 @@
+# emacs
+*~
+\#*\#
+
+# vi
+*.swp
+
+# Compiled python modules
+*.pyc
+
+# Tests artifacts
+.cache
+__pycache__
+
+# Python
+*.egg-info
+
+# Binaries and lib
+bin
+include
+lib
+share
+
+#venv
+venv
+
+#coverage
+.coverage
+
+#vscode
+.vscode
+
+#pycharm
+.idea
+
+#keys and certificates
+*.key
+*.pem
+*.crt
+
+#mock-ia
+mock-ia1
+
+#shibop1
+shibop1
+
+#data
+data
+
+#exclude caddi generated config
+config

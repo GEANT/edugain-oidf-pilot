@@ -1,0 +1,28 @@
+server:
+  port: 8765
+signing:
+  alg: ES256
+  key_file: "/data/signing/oidf-pilot-ia1-signing.key"
+federation_data:
+  entity_id: "https://ia1.oidf-pilot.edugain.org"
+  authority_hints:
+    - "https://ta.oidf-pilot.edugain.org"
+  trust_anchors:
+    - entity_id: "https://ta.oidf-pilot.edugain.org"
+  federation_entity_data:
+    display_name: "eduGAIN OIDF Pilot Intermediate Authority 1"
+    organization_name: "eduGAIN IA1"
+  metadata_policy_file: "/metadata-policy.json"
+storage:
+  backend: json
+  data_dir: "/data/storage"
+endpoints:
+  fetch:
+    path: "/fetch"
+  list:
+    path: "/list"
+  resolve:
+    path: "/resolve"
+  enroll:
+    path: "/enroll"
+

@@ -1,0 +1,34 @@
+server:
+
+logging:
+  access:
+    level: debug
+    stderr: true
+  internal:
+    level: debug
+    stderr: true
+
+sessions:
+  ttl: 3600
+  cookie_domain: oidf-pilot.edugain.org
+
+auth:
+  - domain: op2.oidf-pilot.edugain.org
+#  - domain: whoami-oidf-pilot.aai.garr.it
+#    require:
+#      groups: user
+
+federation:
+  entity_id: https://rp1.oidf-pilot.edugain.org
+  trust_anchors:
+    - entity_id: https://ta.oidf-pilot.edugain.org
+      #    - entity_id: https://ia1.oidf-pilot.edugain.org
+  authority_hints:
+    - https://ia1.oidf-pilot.edugain.org
+  logo_uri:
+  key_storage: /data
+  use_resolve_endpoint: true
+  use_entity_collection_endpoint: true
+
+debug_auth: true
+

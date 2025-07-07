@@ -1,0 +1,15 @@
+services:
+  goia2:
+    image: oidfed/lighthouse:main
+    restart: unless-stopped
+    volumes:
+      - ./lighthouse/config.yaml:/config.yaml:ro
+      - ./lighthouse/data:/data
+    networks:
+      - caddy
+      
+networks:
+  caddy:
+    external: true
+    name: caddy-network
+    
