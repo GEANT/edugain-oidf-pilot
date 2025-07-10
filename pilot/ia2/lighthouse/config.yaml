@@ -1,27 +1,30 @@
 server:
-    port: 8765
+  port: 8765
 signing:
-    alg: ES512
-    key_file: "/data/signing/oidf-pilot-ia2-signing.key"
+  alg: ES512
+  key_file: "/data/signing/oidf-pilot-ia2-signing.key"
 federation_data:
-    entity_id: "https://ia2.oidf-pilot.edugain.org"
-    federation_entity_metadata:
-        display_name: "eduGAIN OIDF Pilot Intermediate Authority 2"
-        organization_name: "eduGAIN OIDF Pilot"
-    metadata_policy_file: "/metadata-policy.json"
-    trust_ancors:
-        - entity_id: "https://ta.oidf-pilot.edugain.org"
-    authority_hints:
-        - "https://ta.oidf-pilot.edugain.org"
+  entity_id: "https://ia2.oidf-pilot.edugain.org"
+  federation_entity_metadata:
+    display_name: "eduGAIN OIDF Pilot Intermediate Authority 2"
+    organization_name: "eduGAIN OIDF Pilot"
+    organization_uri: "https://edugain.org"
+    contacts:
+      - support@edugain.org
+  metadata_policy_file: "/metadata-policy.json"
+  trust_ancors:
+    - entity_id: "https://ta.oidf-pilot.edugain.org"
+  authority_hints:
+    - "https://ta.oidf-pilot.edugain.org"
 storage:
-    backend: json
-    data_dir: "/data/storage"
+  backend: json
+  data_dir: "/data/storage"
 endpoints:
-    fetch:
-        path: "/fetch"
-    list:
-        path: "/list"
-    resolve:
-        path: "/resolve"
-    enroll:
-        path: "/enroll"
+  fetch:
+    path: "/fetch"
+  list:
+    path: "/list"
+  resolve:
+    path: "/resolve"
+  enroll:
+    path: "/enroll"

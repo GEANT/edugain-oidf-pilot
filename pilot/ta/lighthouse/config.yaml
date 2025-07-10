@@ -8,6 +8,9 @@ federation_data:
   federation_entity_metadata:
     display_name: "eduGAIN OIDF Pilot Trust Anchor"
     organization_name: "eduGAIN"
+    organization_uri: "https://edugain.org"
+    contacts:
+      - support@edugain.org
   metadata_policy_file: "/metadata-policy.json"
 storage:
   backend: json

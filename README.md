@@ -39,6 +39,9 @@ graph TD;
   PIA1-->PRP1;  
 ```
 
+> [!NOTE] The pilot infrastructure is based on a series of docker instances. All the
+> configuration files used to set up the dockers are available in the `pilot` directory
+> (keys and running data excluded). 
 
 ## Pilot Participation
 
@@ -92,5 +95,17 @@ Trust Anchor. The configuration endpoint is determined by concatenating the stri
 same key communicated in the request.
 5. Verify that the Federation Trust Anchor is compliant with all the requirements listed above.
 6. If everything is ok, add the Federation Trust Anchor as a subordinate of the eduGAIN OIDF Pilot Trust Anchor.
-7. Communicate to the requester that all is good and they've been officially on boarded to the pilot.
+7. Verify that a valid Trust Chain exists between the Federation Trust Anchor and other subordinates of the eduGAIN OIDF Pilot Trust Anchor.
+8. Communicate to the requester that all is good and they've been officially on boarded to the pilot.
 
+### eduGAIN Pilot Entities Configurations
+
+- eduGAIN OpenID Federation Pilot Trust Anchor - https://ta.oidf-pilot.edugain.org 
+
+```
+
+```
+
+- https://ia1.oidf-pilot.edugain.org: Intermediate Authority 1, which is an entity controlled by the pilot team that acts as a mock federation. It's a subordinate of the eduGAIN-TA based on the LightHouse OIDFed Trust Anchor.
+- https://ia2.oidf-pilot.edugain.org: Intermediate Authority 2, which is an entity controlled by the pilot team that acts as a mock federation. It's a subordinate of the eduGAIN-TA based on the LightHouse OIDFed Trust Anchor.
+- https://rp1.oidf-pilot.edugain.org: Relaying Party 1, which is an entity controlled by the pilot team offering a simple OIDFed Relaying Party. It's a subordinate of the Intermediate Authority 1. It's based on OFFA - Openid Federation Forward Auth (https://go-oidfed.github.io/offa/).

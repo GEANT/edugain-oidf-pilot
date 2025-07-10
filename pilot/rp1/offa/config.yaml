@@ -25,7 +25,7 @@ federation:
       #    - entity_id: https://ia1.oidf-pilot.edugain.org
   authority_hints:
     - https://ia1.oidf-pilot.edugain.org
-  logo_uri:
+  organization_name: "eduGAIN"
   key_storage: /data
   use_resolve_endpoint: true
   use_entity_collection_endpoint: true

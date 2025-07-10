@@ -12,7 +12,10 @@ federation_data:
   federation_entity_data:
     display_name: "eduGAIN OIDF Pilot Intermediate Authority 1"
     organization_name: "eduGAIN IA1"
-  metadata_policy_file: "/metadata-policy.json"
+    organization_uri: "https://edugain.org"
+    contacts:
+      - support@edugain.org
+    metadata_policy_file: "/metadata-policy.json"
 storage:
   backend: json
   data_dir: "/data/storage"
