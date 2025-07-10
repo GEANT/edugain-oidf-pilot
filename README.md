@@ -100,12 +100,87 @@ same key communicated in the request.
 
 ### eduGAIN Pilot Entities Configurations
 
+Here you can find some example Entities Configurations provided by the current
+eduGAIN OpenID Federation Pilot entities.
+
 - eduGAIN OpenID Federation Pilot Trust Anchor - https://ta.oidf-pilot.edugain.org 
 
 ```
-
+{
+  "exp": 1752246223.7172408,
+  "iat": 1752159823.7172408,
+  "iss": "https://ta.oidf-pilot.edugain.org",
+  "jwks": {
+    "keys": [
+      {
+        "alg": "ES256",
+        "crv": "P-256",
+        "kid": "xcXdyJ2_7cOd05QIqfpdrb3j5-mYFw8dqdcqzEh0lUw",
+        "kty": "EC",
+        "use": "sig",
+        "x": "hh5u_VrRXLaXNAdZX2CQWNAXFqgDCYhYGY1y1qbx9Q8",
+        "y": "qNPeoZOuVv-I6e-oUt9imwV6TSt-ymTaaW2Mrlgo0JQ"
+      }
+    ]
+  },
+  "lighthouse_version": "0.5.1",
+  "metadata": {
+    "federation_entity": {
+      "contacts": [
+        "support@edugain.org"
+      ],
+      "display_name": "eduGAIN OIDF Pilot Trust Anchor",
+      "federation_enroll_endpoint": "https://ta.oidf-pilot.edugain.org/enroll",
+      "federation_fetch_endpoint": "https://ta.oidf-pilot.edugain.org/fetch",
+      "federation_list_endpoint": "https://ta.oidf-pilot.edugain.org/list",
+      "federation_resolve_endpoint": "https://ta.oidf-pilot.edugain.org/resolve",
+      "organization_name": "eduGAIN",
+      "organization_uri": "https://edugain.org"
+    }
+  },
+  "sub": "https://ta.oidf-pilot.edugain.org"
+}
 ```
 
-- https://ia1.oidf-pilot.edugain.org: Intermediate Authority 1, which is an entity controlled by the pilot team that acts as a mock federation. It's a subordinate of the eduGAIN-TA based on the LightHouse OIDFed Trust Anchor.
-- https://ia2.oidf-pilot.edugain.org: Intermediate Authority 2, which is an entity controlled by the pilot team that acts as a mock federation. It's a subordinate of the eduGAIN-TA based on the LightHouse OIDFed Trust Anchor.
-- https://rp1.oidf-pilot.edugain.org: Relaying Party 1, which is an entity controlled by the pilot team offering a simple OIDFed Relaying Party. It's a subordinate of the Intermediate Authority 1. It's based on OFFA - Openid Federation Forward Auth (https://go-oidfed.github.io/offa/).
+- Intermediate Authority 2 - https://ia2.oidf-pilot.edugain.org
+
+```
+{
+  "authority_hints": [
+    "https://ta.oidf-pilot.edugain.org"
+  ],
+  "exp": 1752246518.9038033,
+  "iat": 1752160118.9038033,
+  "iss": "https://ia2.oidf-pilot.edugain.org",
+  "jwks": {
+    "keys": [
+      {
+        "alg": "ES512",
+        "crv": "P-521",
+        "kid": "V9BIFlN_TB-TTGggWcnRU_APfSjsi1MxwPBhvRz3Now",
+        "kty": "EC",
+        "use": "sig",
+        "x": "AB6kKs3DH3SVNkLwrPHfwP1crdbfpYIyQxqQ5PloZzpGQXFj4fG5pWzYB5UgxanO0MtUHR-NZmKUJ_58ffvgBXNp",
+        "y": "AcjpQWBsRJyE6Tf3Bw9Qg9H7eWwCV12zHtnB8T5TovHkud1D1qyjLmeq8rDeOHTielIqCTHZ70ErOrnxqqAWcFn5"
+      }
+    ]
+  },
+  "lighthouse_version": "0.5.1",
+  "metadata": {
+    "federation_entity": {
+      "contacts": [
+        "support@edugain.org"
+      ],
+      "display_name": "eduGAIN OIDF Pilot Intermediate Authority 2",
+      "federation_enroll_endpoint": "https://ia2.oidf-pilot.edugain.org/enroll",
+      "federation_fetch_endpoint": "https://ia2.oidf-pilot.edugain.org/fetch",
+      "federation_list_endpoint": "https://ia2.oidf-pilot.edugain.org/list",
+      "federation_resolve_endpoint": "https://ia2.oidf-pilot.edugain.org/resolve",
+      "organization_name": "eduGAIN",
+      "organization_uri": "https://edugain.org"
+    }
+  },
+  "sub": "https://ia2.oidf-pilot.edugain.org"
+}
+```
+

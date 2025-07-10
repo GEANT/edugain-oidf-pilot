@@ -7,11 +7,11 @@ federation_data:
   entity_id: "https://ia2.oidf-pilot.edugain.org"
   federation_entity_metadata:
     display_name: "eduGAIN OIDF Pilot Intermediate Authority 2"
-    organization_name: "eduGAIN OIDF Pilot"
+    organization_name: "eduGAIN"
     organization_uri: "https://edugain.org"
     contacts:
       - support@edugain.org
-  metadata_policy_file: "/metadata-policy.json"
+  metadata_policy_file: "/data/metadata-policy.json"
   trust_ancors:
     - entity_id: "https://ta.oidf-pilot.edugain.org"
   authority_hints:
