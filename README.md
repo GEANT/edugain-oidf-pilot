@@ -4,10 +4,10 @@
 
 This is the home of the eduGAIN OpenID Federation Pilot.
 
- eduGAIN is the interfederation service that connects identity federations around the world,
- simplifying access to content, services and resources for the global research and education
- community. eduGAIN comprises over 80 participant federations connecting more than 9,000
- Identity and Service Providers.
+> eduGAIN is the interfederation service that connects identity federations around the world,
+> simplifying access to content, services and resources for the global research and education
+> community. eduGAIN comprises over 80 participant federations connecting more than 9,000
+> Identity and Service Providers.
 
 For more information about eduGAIN please visit:
 
