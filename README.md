@@ -2,7 +2,7 @@
 
 ![eduGAIN logo](docs/imgs/EduGAIN_logo.png)
 
-This is the home of the eduGAIN OpenID Federation Pilot.
+This repository is dedicated to the eduGAIN OpenID Federation Pilot.
 
 > eduGAIN is the interfederation service that connects identity federations around the world,
 > simplifying access to content, services and resources for the global research and education
