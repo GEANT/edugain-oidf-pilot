@@ -15,7 +15,7 @@ For more information about eduGAIN please visit:
 - Membership, entities, metadata - eduGAIN Tecnical site: https://technical.edugain.org
 - Documentation, Meetings, Governance - the eduGAIN wiki: https://wiki.edugain.org
 
---
+---
 
 ## Pilot environment
 
