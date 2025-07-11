@@ -69,7 +69,7 @@ Intermediate Authorities must respect the following requirements:
 - expose the following endpoints:
   - `federation_fetch_endpoint` as described in [https://openid.net/specs/openid-federation-1_0.html#fetch_endpoint].
   - `federation_list_endpoint` as described in [https://openid.net/specs/openid-federation-1_0.html#entity_listing].
-  - `federation_resolve_endpoint` as described in [federation_resolve_endpoint]. The resolve endpoint MUST accept queries with the `trust_anchor` parameter equals to:
+  - `federation_resolve_endpoint` as described in [https://openid.net/specs/openid-federation-1_0.html#name-resolve-entity]. The resolve endpoint MUST accept queries with the `trust_anchor` parameter equals to:
     - the Intermediate Authority.
     - the eduGAIN Trust Anchor.
 
