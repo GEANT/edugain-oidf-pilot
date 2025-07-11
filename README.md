@@ -95,8 +95,7 @@ Trust Anchor. The configuration endpoint is determined by concatenating the stri
 same key communicated in the request.
 5. Verify that the Federation Trust Anchor is compliant with all the requirements listed above.
 6. If everything is ok, add the Federation Trust Anchor as a subordinate of the eduGAIN OIDF Pilot Trust Anchor.
-7. Verify that a valid Trust Chain exists between the Federation Trust Anchor and other subordinates of the eduGAIN OIDF Pilot Trust Anchor.
-8. Communicate to the requester that all is good and they've been officially on boarded to the pilot.
+7. Communicate to the requester that all is good and they've been officially on boarded to the pilot.
 
 ### eduGAIN Pilot Entities Configurations
 
