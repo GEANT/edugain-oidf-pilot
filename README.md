@@ -39,7 +39,8 @@ graph TD;
   PIA1-->PRP1;  
 ```
 
-> [!NOTE] The pilot infrastructure is based on a series of docker instances. All the
+> [!NOTE]
+> The pilot infrastructure is based on a series of docker instances. All the
 > configuration files used to set up the dockers are available in the `pilot` directory
 > (keys and running data excluded). 
 
