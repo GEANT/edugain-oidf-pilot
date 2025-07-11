@@ -92,7 +92,7 @@ The eduGAIN pilot team will process each request with the following process:
 Trust Anchor. The configuration endpoint is determined by concatenating the string 
 `/.well-known/openid-federation` to the Entity Identifier.
 3. Verify that the Entity Configuration is signed with the same key communicated in the request. 
-4. Verify that the federation_entity key contained in the Entity Configuration is the
+4. Verify that the federation signing key contained in the Entity Configuration is the
 same key communicated in the request.
 5. Verify that the Federation Trust Anchor is compliant with all the requirements listed above.
 6. If everything is ok, add the Federation Trust Anchor as a subordinate of the eduGAIN OIDF Pilot Trust Anchor.
@@ -101,7 +101,7 @@ same key communicated in the request.
 
 ### eduGAIN Pilot Entities Configurations
 
-Here you can find some example Entities Configurations provided by the current
+Here you can find some example Entity Configurations provided by the current
 eduGAIN OpenID Federation Pilot entities.
 
 - eduGAIN OpenID Federation Pilot Trust Anchor - https://ta.oidf-pilot.edugain.org 
