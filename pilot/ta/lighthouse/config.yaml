@@ -1,0 +1,26 @@
+server:
+  port: 8765
+signing:
+  alg: ES256
+  key_file: "/data/signing/oidf-pilot-ta-signing.key"
+federation_data:
+  entity_id: "https://ta.oidf-pilot.edugain.org"
+  federation_entity_metadata:
+    display_name: "eduGAIN OIDF Pilot Trust Anchor"
+    organization_name: "eduGAIN"
+    organization_uri: "https://edugain.org"
+    contacts:
+      - support@edugain.org
+  metadata_policy_file: "/data/metadata-policy.json"
+storage:
+  backend: json
+  data_dir: "/data/storage"
+endpoints:
+  fetch:
+    path: "/fetch"
+  list:
+    path: "/list"
+  resolve:
+    path: "/resolve"
+  enroll:
+    path: "/enroll"

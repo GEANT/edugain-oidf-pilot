@@ -1,0 +1,41 @@
+{
+    email edugain-oidf@lists.geant.org
+}
+
+ta.oidf-pilot.edugain.org {
+  reverse_proxy gota:8765
+}
+
+ia1.oidf-pilot.edugain.org {
+  reverse_proxy goia1:8765
+}
+
+ia2.oidf-pilot.edugain.org {
+  reverse_proxy goia2:8765
+}
+
+rp1.oidf-pilot.edugain.org {
+  reverse_proxy offa:15661
+}
+
+op1.oidf-pilot.edugain.org {
+  reverse_proxy shibop1:8080
+}
+
+whoami-oidf-pilot.aai.garr.it {
+   forward_auth offa:15661 {
+      uri /auth
+      copy_headers X-Forwarded-User X-Forwarded-Groups X-Forwarded-Name X-Forwarded-Email X-Forwarded-Provider X-Forwarded-Subject
+   }
+
+   reverse_proxy whoami:80
+}
+
+op2.oidf-pilot.edugain.org {
+   forward_auth offa:15661 {
+      uri /auth
+      copy_headers X-Forwarded-User X-Forwarded-Groups X-Forwarded-Name X-Forwarded-Email X-Forwarded-Provider X-Forwarded-Subject
+   }
+
+   reverse_proxy whoami:80
+}
