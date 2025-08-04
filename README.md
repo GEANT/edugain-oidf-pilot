@@ -20,7 +20,7 @@ For more information about eduGAIN please visit:
 ## Pilot environment
 
 The pilot environment consists of the following elements:
-- https://ta.oidf-pilot.edugain.org: the eduGAIN OpenID Federation Pilot Trust Anchor, based on the LightHouse OIDFed Trust Anchor (https://go-oidfed.github.io/offa/).  
+- https://ta.oidf-pilot.edugain.org: the eduGAIN OpenID Federation Pilot Trust Anchor, based on the LightHouse OIDFed Trust Anchor (https://go-oidfed.github.io/lighthouse/).  
 - https://ia1.oidf-pilot.edugain.org: Intermediate Authority 1, which is an entity controlled by the pilot team that acts as a mock federation. It's a subordinate of the eduGAIN-TA based on the LightHouse OIDFed Trust Anchor.
 - https://ia2.oidf-pilot.edugain.org: Intermediate Authority 2, which is an entity controlled by the pilot team that acts as a mock federation. It's a subordinate of the eduGAIN-TA based on the LightHouse OIDFed Trust Anchor.
 - https://rp1.oidf-pilot.edugain.org: Relaying Party 1, which is an entity controlled by the pilot team offering a simple OIDFed Relaying Party. It's a subordinate of the Intermediate Authority 1. It's based on OFFA - Openid Federation Forward Auth (https://go-oidfed.github.io/offa/).
