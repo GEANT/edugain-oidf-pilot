@@ -18,6 +18,10 @@ auth:
 #    require:
 #      groups: user
 
+signing:
+  key_storage: /data
+  alg: ES512
+
 federation:
   entity_id: https://rp1.oidf-pilot.edugain.org
   trust_anchors:
@@ -25,8 +29,11 @@ federation:
       #    - entity_id: https://ia1.oidf-pilot.edugain.org
   authority_hints:
     - https://ia1.oidf-pilot.edugain.org
+  display_name: "eduGAIN OIDF Pilot RP1"
   organization_name: "eduGAIN"
-  key_storage: /data
+  organization_uri: "https://edugain.org"
+  contacts:
+    - support@edugain.org
   use_resolve_endpoint: true
   use_entity_collection_endpoint: true
 
