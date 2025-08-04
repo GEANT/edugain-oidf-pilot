@@ -2,7 +2,7 @@ server:
   port: 8765
 signing:
   alg: ES256
-  key_file: "/data/signing/oidf-pilot-ta-signing.key"
+  key_dir: "/data/signing"
 federation_data:
   entity_id: "https://ta.oidf-pilot.edugain.org"
   federation_entity_metadata:
