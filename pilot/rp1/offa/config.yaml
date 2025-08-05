@@ -20,7 +20,8 @@ auth:
 
 signing:
   key_storage: /data
-  alg: ES512
+  federation:
+    alg: ES512
 
 federation:
   entity_id: https://rp1.oidf-pilot.edugain.org
