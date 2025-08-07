@@ -62,9 +62,10 @@ Intermediate Authorities must respect the following requirements:
 - act as Trust Anchor for the entities of their federation.
 - provide their own Entity Configuration at the `<ENTITY_IDENTIFIER> + /.well-known/openid-federation` endpoint.
 - the Entity Configuration contains the following OpenID Federation metadata parameters:
-  - `organization_name` matches the Organization Name already published as eduGAIN Participant.
-  - `contacts` contains the technical email address of the federation.
-  - `organization_uri` contains a URL pointing to the official Organizations' site.
+  - `organization_name`: matches the Organization Name already published as eduGAIN Participant.
+  - `contacts`: contains the technical email address of the federation.
+  - `organization_uri`: contains a URL pointing to the official Organizations' site.
+  - `display_name`: contains a human-readable name of the entity to be presented to the end-user.
 - sign the Entity Configuration with the key provided to eduGAIN for the verification of authenticity (see Participation requests below). 
 - expose the following endpoints:
   - `federation_fetch_endpoint` as described in [https://openid.net/specs/openid-federation-1_0.html#fetch_endpoint].
