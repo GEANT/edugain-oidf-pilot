@@ -54,6 +54,8 @@ Of course, an eduGAIN Participant can nominate or aknowledge the participation o
 In order to participate to the pilot, you should have set up your own OpenID Federation Trust Anchor (TA) that will be registered as a Subordinate Entity to the eduGAIN Trust Anchor. From the eduGAIN point of view, the participant 
 Trust Anchor is an Intermediate Authority, which is the main term that will be used in this documentation. 
 
+You are welcome to use whatever software you want to set up your own Trust Anchor provided that is OpenID Federation draft 43 compliant, and respects the requirements listed below. You can also use the same software currently used for the eduGAIN Trust Anchor, LightHouse. Please find set up instructions and example configurations on the pages [https://go-oidfed.github.io/lighthouse/](https://go-oidfed.github.io/lighthouse/)  
+
 > [!IMPORTANT]  
 > Please be aware that the current requirements are going to change in the course
 > of the pilot as we introduce more functionalities and policy obligations.  
