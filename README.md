@@ -47,12 +47,12 @@ graph TD;
 ## Pilot Participation
 
 Pilot participation is reserved to current eduGAIN Participants as listed on the eduGAIN Members page, https://technical.edugain.org/status.
-Of course, an eduGAIN Participant can nominate or aknowledge the participation of anyone on its behalf. 
+Of course, an eduGAIN Participant can nominate or aknowledge the participation of anyone on its behalf. Here you can find all the technical information needed to set up your own Trust Anchor/Intermediate Authority, in order to submit a pilot participation request please refer to the eduGAIN WIKI [https://wiki.geant.org/display/eduGAIN/eduGAIN+-+Open+ID+Federation+Pilot](https://wiki.geant.org/display/eduGAIN/eduGAIN+-+Open+ID+Federation+Pilot), or ask to [<support@edugain.org>](mailto:support@edugain.org).
 
-### Requirements
+### Intermediate Authorities Requirements
 
 In order to participate to the pilot, you should have set up your own OpenID Federation Trust Anchor (TA) that will be registered as a Subordinate Entity to the eduGAIN Trust Anchor. From the eduGAIN point of view, the participant 
-Trust Anchor will be seen as an Intermediate Authority, which is the main term that will be used in this documentation. 
+Trust Anchor is an Intermediate Authority, which is the main term that will be used in this documentation. 
 
 > [!IMPORTANT]  
 > Please be aware that the current requirements are going to change in the course
@@ -73,31 +73,6 @@ Intermediate Authorities must respect the following requirements:
   - `federation_resolve_endpoint` as described in [https://openid.net/specs/openid-federation-1_0.html#name-resolve-entity]. The resolve endpoint MUST accept queries with the `trust_anchor` parameter equals to:
     - the Intermediate Authority.
     - the eduGAIN Trust Anchor.
-
-
-### Participation requests
-
-Requests for participation should be sent by the eduGAIN delegate or deputy to [<support@edugain.org>](mailto:support@edugain.org) with the following content:
-- eduGAIN Participant name.
-- The Entity Identifier of the Federation Trust Anchor.
-- The Federation Trust Anchor public key in PEM format can be communicated in one of the following way:
-  - sent as an attachment to the mail request if S/MIME signing is enabled with trusted (CAB/Forum) certificates, or
-  - published on an HTTPS URL protected by trusted (CAB/Forum) certificates and pointing to the Federation Trust Anchor public key in PEM format. Please note that the HOST part of the URL is expected to insist on a domain in the remit of the organization.
-
-### Federations set up
-
-The eduGAIN pilot team will process each request with the following process:
-
-1. Verify that the request is complete and the PEM key is valid.
-2. Query the configuration endpoint to obtain the Entity Configuration of the Federation
-Trust Anchor. The configuration endpoint is determined by concatenating the string 
-`/.well-known/openid-federation` to the Entity Identifier.
-3. Verify that the Entity Configuration is signed with the same key communicated in the request. 
-4. Verify that the federation signing key contained in the Entity Configuration is the
-same key communicated in the request.
-5. Verify that the Federation Trust Anchor is compliant with all the requirements listed above.
-6. If everything is ok, add the Federation Trust Anchor as a subordinate of the eduGAIN OIDF Pilot Trust Anchor.
-7. Communicate to the requester that all is good and they've been officially on boarded to the pilot.
 
 ### eduGAIN Pilot Entities Configurations
 
