@@ -75,6 +75,7 @@ Intermediate Authorities must respect the following requirements:
   - `federation_resolve_endpoint` as described in [https://openid.net/specs/openid-federation-1_0.html#name-resolve-entity]. The resolve endpoint MUST accept queries with the `trust_anchor` parameter equals to:
     - the Intermediate Authority.
     - the eduGAIN Trust Anchor.
+  - list the eduGAIN OIDF Pilot TA --- "https://ta.oidf-pilot.edugain.org" --- as one of their Trust Anchor. 
  
 ### eduGAIN Pilot Entities Configurations
 
