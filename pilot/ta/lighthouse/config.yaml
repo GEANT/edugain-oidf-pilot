@@ -1,8 +1,18 @@
 server:
   port: 8765
+
+logging:
+  access:
+    level: debug
+    stderr: true
+  internal:
+    level: debug
+    stderr: true
+
 signing:
   alg: ES256
-  key_file: "/data/signing/oidf-pilot-ta-signing.key"
+  key_dir: "/data/signing"
+
 federation_data:
   entity_id: "https://ta.oidf-pilot.edugain.org"
   federation_entity_metadata:
@@ -12,9 +22,11 @@ federation_data:
     contacts:
       - support@edugain.org
   metadata_policy_file: "/data/metadata-policy.json"
+
 storage:
   backend: json
   data_dir: "/data/storage"
+
 endpoints:
   fetch:
     path: "/fetch"
