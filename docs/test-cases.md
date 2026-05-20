@@ -208,5 +208,9 @@ In each test case, the architecture reference (e.g., TA-01) indicates which is t
 
 ---
 
+## Subject Identifier Test Cases
 
+| Ref       | Arch | Requirement Level | Test Name                           | Requirement Summary                                                                                                                    | Test Action                                                                                                  | Expected Outcome                                                    |
+| --------- | ---- | ----------------- | ----------------------------------- |----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| ------------------------------------------------------------------- |
+| **SI-01** | ANY  | SHOULD            | Generates SAML-Identical SubjectIDs | OpenID Providers, when authenticating clients, must ensure that the Subject Identifiers are identical to those produced in SAML flows. | Authenticate a client and compare the generated Subject ID with the corresponding SAML value. | Subject Identifiers returned match exactly the values used in SAML. |
 
