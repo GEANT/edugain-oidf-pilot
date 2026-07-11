@@ -14,6 +14,7 @@ This document defines test cases for OpenID Federation in eduGAIN. This includes
 | **P-03** | Network & Authentication | All components (TA, OP, RP) can communicate over HTTPS. |
 | **P-04** | Trust Marks | Trust mark issuers and validation endpoints are available and reachable. |
 | **P-05** | Logging & Monitoring | Logging enabled on TA, OP, and RP components to record enrolment, key, and trust evaluation events. |
+| **P-06** | Caching | Unless the test specifically exercises the caching components, caching of entity statements and configurations should be disabled |
 
 
 ## Test Architectures
